@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'cuenta-cliente',
     pathMatch: 'full'
   },
   {
@@ -19,6 +19,15 @@ const routes: Routes = [
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
+ {
+  path: 'prueba1',
+    loadChildren: () => import('./pages/InicioReal/prueba1.module').then( m => m.Prueba1PageModule)
+  },
+  {
+    path: 'cuenta-cliente',
+    loadChildren: () => import('./pages/cuenta-cliente/cuenta-cliente.module').then( m => m.CuentaClientePageModule)
+  },
+
 ];
 
 @NgModule({
