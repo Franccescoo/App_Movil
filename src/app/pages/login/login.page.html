@@ -23,8 +23,7 @@
   <ion-grid class="ion-text-right">
     <ion-row>
       <ion-col size="12">
-        
-        <div style="font-size: 12px; color:#20ad58;;">Has olvidado tu contraseña ?</div>
+        <a [routerLink]="['/login']" style="font-size: 12px; color:#20ad58; text-decoration: none;">Has olvidado tu contraseña ?</a>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -37,7 +36,9 @@
   font-weight: 500;">INGRESAR</ion-button>
   <p>{{ message }}</p>
 
+  <p style="font-size: 12px;">No tienes cuenta? <span> <a [routerLink]="['/crear-cuenta']" style="color:#20ad58; text-decoration: none;">Crea una nueva cuenta</a> </span></p>
+
+<a href=""></a>
 
 
-  
 </ion-content>
