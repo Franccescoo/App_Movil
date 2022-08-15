@@ -1,4 +1,3 @@
-<!-- Default back button -->
 <ion-header>
   <ion-toolbar color="success">
     <ion-buttons slot="start">
@@ -7,14 +6,10 @@
     <ion-title style="color: #ffffff;">Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-app>
-  <ion-header translucent>
-    <ion-toolbar>
-      <ion-title>Inicio</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-content fullscreen>
+
+<ion-content>
+
     <ion-list>
       <ion-list-header> Noticias Recientes DUOC UC </ion-list-header>
 
@@ -63,74 +58,25 @@
       </ion-item>
     </ion-list>
 
-    <ion-list>
-      <ion-list-header> Online </ion-list-header>
+  
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" color="dark" style="text-decoration: none;">
+      <ion-tab-button tab="schedule">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label >Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/cuenta-cliente']" tab="speakers">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Cuenta</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/mapa']" tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Mapa</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="./avatar-poe.png" />
-        </ion-avatar>
-        <ion-label>
-          <h2>Poe</h2>
-          <h3>New Ride</h3>
-          <p>I just upgraded my X-Wing. Next time...</p>
-        </ion-label>
-      </ion-item>
+</ion-content>
 
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="./avatar-ben.png" />
-        </ion-avatar>
-        <ion-label>
-          <h2>Ben</h2>
-          <h3>Move Along</h3>
-          <p>These aren't the droids you're looking for...</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="./avatar-leia.png" />
-        </ion-avatar>
-        <ion-label>
-          <h2>Leia</h2>
-          <h3>You're My Only Hope</h3>
-          <p>I've placed information vital to the survival...</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="./avatar-yoda.png" />
-        </ion-avatar>
-        <ion-label>
-          <h2>Yoda</h2>
-          <h3>Size matters not</h3>
-          <p>Do or do not. There is no try...</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-app>
-<ion-tabs>
-<ion-tabs>
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="schedule">
-      <ion-icon name="calendar"></ion-icon>
-      <ion-label>Inicio</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button [routerLink]="['/cuenta-cliente']"tab="speakers">
-      <ion-icon name="person-circle"></ion-icon>
-      <ion-label>Cuenta</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button [routerLink]="['/mapa']" tab="map">
-      <ion-icon name="map"></ion-icon>
-      <ion-label >Mapa</ion-label>
-    </ion-tab-button>
-
-
-  </ion-tab-bar>
-</ion-tabs>

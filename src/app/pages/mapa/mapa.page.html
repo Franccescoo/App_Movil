@@ -6,31 +6,24 @@
 
 <ion-content>
 
-  <ion-content fullscreen>
     <ion-card>
-      <img src="./assets/img/DUCMAPA.png" />
-      <ion-card-header>
+      <img style="
+        border-top: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        border-radius: 5px;" src="./assets/img/DUCMAPA.png" />
+      <ion-card-header color="success">
         <ion-card-subtitle>Tu ubicación</ion-card-subtitle>
         <ion-card-title>Duoc, Plaza Norte</ion-card-title>
       </ion-card-header>
     </ion-card>
-  </ion-content>
-
-</ion-content>
-
-
-
-
-
-
-
 
 <ion-tabs>
 
-  <ion-tab-bar slot="bottom">
+  <ion-tab-bar slot="bottom" color="dark" style="text-decoration: none;">
     <ion-tab-button [routerLink]="['/prueba1']" tab="schedule">
       <ion-icon name="calendar"></ion-icon>
-      <ion-label>Inicio</ion-label>
+      <ion-label >Inicio</ion-label>
     </ion-tab-button>
 
     <ion-tab-button [routerLink]="['/cuenta-cliente']" tab="speakers">
@@ -38,11 +31,14 @@
       <ion-label>Cuenta</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button  tab="map">
+    <ion-tab-button [routerLink]="['/mapa']" tab="map">
       <ion-icon name="map"></ion-icon>
-      <ion-label >Mapa</ion-label>
+      <ion-label>Mapa</ion-label>
     </ion-tab-button>
 
 
   </ion-tab-bar>
+
 </ion-tabs>
+
+</ion-content>
