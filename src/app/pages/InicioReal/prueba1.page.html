@@ -1,9 +1,10 @@
 <!-- Default back button -->
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-title style="color: #ffffff;">Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-app>
@@ -125,7 +126,7 @@
       <ion-label>Cuenta</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button  tab="map">
+    <ion-tab-button [routerLink]="['/mapa']" tab="map">
       <ion-icon name="map"></ion-icon>
       <ion-label >Mapa</ion-label>
     </ion-tab-button>

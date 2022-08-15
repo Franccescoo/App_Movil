@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title style="color: #ffffff;">Mapa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content fullscreen>
+    <ion-card>
+      <img src="./assets/img/DUCMAPA.png" />
+      <ion-card-header>
+        <ion-card-subtitle>Tu ubicación</ion-card-subtitle>
+        <ion-card-title>Duoc, Plaza Norte</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ion-content>
+
+</ion-content>
+
+
+
+
+
+
+
+
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/prueba1']" tab="schedule">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/cuenta-cliente']" tab="speakers">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Cuenta</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button  tab="map">
+      <ion-icon name="map"></ion-icon>
+      <ion-label >Mapa</ion-label>
+    </ion-tab-button>
+
+
+  </ion-tab-bar>
+</ion-tabs>
