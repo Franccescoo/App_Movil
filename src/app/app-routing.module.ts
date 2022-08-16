@@ -35,7 +35,10 @@ const routes: Routes = [
     path: 'modificar-perfil',
     loadChildren: () => import('./pages/modificar-perfil/modificar-perfil.module').then( m => m.ModificarPerfilPageModule)
   },
-
+  {
+    path: 'configuracion',
+    loadChildren: () => import('./pages/configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
+  },
 
 
 ];
