@@ -31,12 +31,29 @@
       <ion-col size="2"><ion-icon style="padding-top: 10px;" name="chevron-forward-outline"></ion-icon></ion-col>
     </ion-row>
     <ion-row style="background-color: #e2e2e2;">
-      <ion-col size="10"><ion-input type="text" style="font-size: 15px;" placeholder="Contraseña"></ion-input></ion-col>
+      <ion-col size="10"><ion-input type="password" style="font-size: 15px;" placeholder="Contraseña"></ion-input></ion-col>
       <ion-col size="2"><ion-icon style="padding-top: 10px;" name="chevron-forward-outline"></ion-icon></ion-col>
     </ion-row>
   </ion-grid>
 
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" color="dark" style="text-decoration: none;">
+      <ion-tab-button [routerLink]="['/prueba1']" tab="schedule">
+        <ion-icon name="home"></ion-icon>
+        <ion-label >Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/mapa']" tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Mapa</ion-label>
+      </ion-tab-button>
 
+      <ion-tab-button [routerLink]="['/cuenta-cliente']" tab="speakers">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Cuenta</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 
 
 

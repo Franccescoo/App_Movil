@@ -1,24 +1,14 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-title style="color: #ffffff;">Mapa</ion-title>
+    <ion-title >Mapa</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-    <ion-card>
-      <img style="
-        border-top: black 2px solid;
-        border-left: black 2px solid;
-        border-right: black 2px solid;
-        border-radius: 5px;" src="./assets/img/DUCMAPA.png" />
-      <ion-card-header color="success">
-        <ion-card-subtitle>Tu ubicación</ion-card-subtitle>
-        <ion-card-title>Duoc, Plaza Norte</ion-card-title>
-      </ion-card-header>
-    </ion-card>
+  <div style="height: 91%;" id="map"></div>
 
-<ion-tabs>
+<ion-tabs style="position: static; height: 8%;">
 
   <ion-tab-bar slot="bottom" color="dark" style="text-decoration: none;">
     <ion-tab-button [routerLink]="['/prueba1']" tab="schedule">
