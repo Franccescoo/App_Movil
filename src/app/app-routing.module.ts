@@ -46,6 +46,15 @@ const routes: Routes = [
     path: 'menu-conductor',
     loadChildren: () => import('./pages/menu-conductor/menu-conductor.module').then( m => m.MenuConductorPageModule)
   },
+  {
+    path: 'pago-cliente',
+    loadChildren: () => import('./pages/pago-cliente/pago-cliente.module').then( m => m.PagoClientePageModule)
+  },
+  {
+    path: 'viaje-cliente',
+    loadChildren: () => import('./pages/viaje-cliente/viaje-cliente.module').then( m => m.ViajeClientePageModule)
+  },
+
 
 
 ];
