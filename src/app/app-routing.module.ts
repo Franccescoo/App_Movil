@@ -15,21 +15,9 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
- {
-  path: 'prueba1',
-    loadChildren: () => import('./pages/InicioReal/prueba1.module').then( m => m.Prueba1PageModule)
-  },
-  {
-    path: 'cuenta-cliente',
-    loadChildren: () => import('./pages/cuenta-cliente/cuenta-cliente.module').then( m => m.CuentaClientePageModule)
-  },
   {
     path: 'crear-cuenta',
     loadChildren: () => import('./pages/crear-cuenta/crear-cuenta.module').then( m => m.CrearCuentaPageModule)
-  },
-  {
-    path: 'mapa',
-    loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
   },
   {
     path: 'modificar-perfil',
@@ -38,7 +26,8 @@ const routes: Routes = [
   {
     path: 'configuracion',
     loadChildren: () => import('./pages/configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
-  },  {
+  },
+  {
     path: 'login-conductor',
     loadChildren: () => import('./pages/login-conductor/login-conductor.module').then( m => m.LoginConductorPageModule)
   },
@@ -53,6 +42,10 @@ const routes: Routes = [
   {
     path: 'viaje-cliente',
     loadChildren: () => import('./pages/viaje-cliente/viaje-cliente.module').then( m => m.ViajeClientePageModule)
+  },
+  {
+    path: 'tab-inicial',
+    loadChildren: () => import('./pages/tab-inicial/tab-inicial.module').then( m => m.TabInicialPageModule)
   },
 
 

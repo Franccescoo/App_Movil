@@ -9,30 +9,14 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-toolbar color="#ffffff">
+    <ion-searchbar  placeholder="Punto de partida"></ion-searchbar>
+  </ion-toolbar>
+  <ion-toolbar color="#ffffff">
+    <ion-searchbar  placeholder="¿A dónde vas?"></ion-searchbar>
+  </ion-toolbar>
   <div style="height: 91%;" id="map"></div>
 
-<ion-tabs style="position: static; height: 8%;">
 
-  <ion-tab-bar slot="bottom" color="dark" style="text-decoration: none;">
-    <ion-tab-button [routerLink]="['/prueba1']" tab="schedule">
-      <ion-icon name="home"></ion-icon>
-      <ion-label >Inicio</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button [routerLink]="['/mapa']" tab="map">
-      <ion-icon name="map"></ion-icon>
-      <ion-label>Mapa</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button [routerLink]="['/cuenta-cliente']" tab="speakers">
-      <ion-icon name="person-circle"></ion-icon>
-      <ion-label>Cuenta</ion-label>
-    </ion-tab-button>
-
-
-  </ion-tab-bar>
-
-</ion-tabs>
 
 </ion-content>
