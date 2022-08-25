@@ -42,7 +42,19 @@ const routes: Routes = [
   {
     path: 'viaje-cliente',
     loadChildren: () => import('./pages/viaje-cliente/viaje-cliente.module').then( m => m.ViajeClientePageModule)
+  },  {
+    path: 'perfil-conductor',
+    loadChildren: () => import('./pages/perfil-conductor/perfil-conductor.module').then( m => m.PerfilConductorPageModule)
   },
+  {
+    path: 'configuracion-conductor',
+    loadChildren: () => import('./pages/configuracion-conductor/configuracion-conductor.module').then( m => m.ConfiguracionConductorPageModule)
+  },
+  {
+    path: 'viajes-conductor',
+    loadChildren: () => import('./pages/viajes-conductor/viajes-conductor.module').then( m => m.ViajesConductorPageModule)
+  },
+
 
 
 
