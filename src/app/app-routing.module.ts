@@ -43,10 +43,7 @@ const routes: Routes = [
     path: 'viaje-cliente',
     loadChildren: () => import('./pages/viaje-cliente/viaje-cliente.module').then( m => m.ViajeClientePageModule)
   },
-  {
-    path: 'tab-inicial',
-    loadChildren: () => import('./pages/tab-inicial/tab-inicial.module').then( m => m.TabInicialPageModule)
-  },
+
 
 
 

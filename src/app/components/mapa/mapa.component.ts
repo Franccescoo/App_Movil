@@ -11,10 +11,10 @@ interface Marker {
 }
 @Component({
   selector: 'app-mapa',
-  templateUrl: './mapa.page.html',
-  styleUrls: ['./mapa.page.scss'],
+  templateUrl: './mapa.component.html',
+  styleUrls: ['./mapa.component.scss'],
 })
-export class MapaPage implements OnInit{
+export class MapaComponent implements OnInit {
 
   map = null;
 
@@ -55,5 +55,4 @@ export class MapaPage implements OnInit{
       title: marker.title
     });
   }
-
 }
